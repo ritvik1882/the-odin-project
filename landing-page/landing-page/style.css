@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,600,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-background {
+    background-color: #1F2937;
+    padding: 0 16px 64px;
+}
+
+.header,
+.hero {
+    max-width: 900px;
+    margin: auto;
+}
+
+.header {
+    height: 52px;
+    margin-bottom: 32px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    font-size: 18px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+
+.header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    gap: 12px;
+}
+
+.header a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #E5E7EB;
+}
+
+.hero {
+    display: flex;
+    gap: 16px;
+
+    /* Shrink hero image at same rate as hero text while preserving proportions. */
+}
+
+.hero-img {
+    flex: 1;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
+    margin-left: auto;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.hero-text .main {
+    max-width: 300px;
+    font-size: 32px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.hero-text .secondary {
+    max-width: 350px;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.hero-text button {
+    width: 72px;
+    padding: 4px;
+    background-color: #3882F6;
+    color: white;
+    border-radius: 10%;
+    border: 0px;
+}
+
+.info-heading {
+    font-size: 24px;
+    font-weight: 900;
+    color: #1F2937;
+    text-align: center;
+    margin: 24px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.card img {
+    width: 180px;
+    height: 180px;
+    border: #3882F6 4px solid;
+    border-radius: 5%
+}
+
+.card p {
+    max-width: 180px;
+    margin-top: 4px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.quote-background {
+    background-color: #E5E7EB;
+    padding: 72px;
+}
+
+.quote {
+    max-width: 800px;
+    margin: auto;
+}
+
+.quote-content {
+    font-size: 32px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1F2937;
+    text-align: justify;
+}
+
+.quote-source {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: right;
+}
+
+.signup-call {
+    /* flex: 1; */
+    background-color: #3882F6;
+    margin: 72px;
+    padding: 32px 92px;
+    width: 80%;
+    max-width: 850px;
+    align-self: center;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.signup-call .text .primary {
+    color: #f9faf8;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.signup-call .text .secondary {
+    color: #f9faf8;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.signup-call button {
+    background-color: #3882F6;
+    color: #f9faf8;
+    padding: 8px 16px;
+    border: #f9faf8 solid 2px;
+    border-radius: 10%;
+}
+
+.footer {
+    background-color: #1F2937;
+    padding: 24px;
+    margin-top: auto;
+}
+
+.footer .text {
+    color: #f9faf8;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+}
